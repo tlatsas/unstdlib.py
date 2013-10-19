@@ -20,7 +20,7 @@ def random_string(length=6, alphabet=string.letters+string.digits):
 
     Default alphabet is url-friendly (base62).
     """
-    return ''.join([random.choice(alphabet) for i in xrange(length)])
+    return ''.join([random.choice(alphabet) for i in range(length)])
 
 
 def number_to_string(n, alphabet):
