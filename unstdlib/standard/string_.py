@@ -324,10 +324,10 @@ def format_int(n, singular=_Default, plural=_Default):
         if plural is _Default:
             plural = None
 
-        singular = u'{:,}'
+        singular = u('{:,}')
 
     elif plural is _Default:
-        plural = singular + u's'
+        plural = singular + u('s')
 
     if n == 1 or not plural:
         return singular.format(n)
